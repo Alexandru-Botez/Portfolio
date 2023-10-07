@@ -10,12 +10,14 @@
 body{
     font-family: 'Work Sans', sans-serif;
     background-color: #28282B;
+    color: white;
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 70px 40px auto;
+    width: 100%;
 }
 
 
@@ -74,22 +76,52 @@ header nav li a {
     font-weight: bold;
 }
 
-/* main */
+/* main (about me) */
 main{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 300px auto;
+    grid-template-rows: 500px auto;
     column-gap: 10px;
     grid-area: 3 / 1 / 3 / span 12;
-    background-color: pink;
+    background-color:#28282B;
 }
 
 .mainText{
     grid-area: 1 / 3 / 1 / span 4;
-    background-color: aqua;
+    background-color: #28282B;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.mainText h1{
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right,#daf2e2,#92e3a9,#415e55);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainText span {
+    color: #92e3a9;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .mainImage{
-    grid-area: 1 / 7 / 1 / span 3 ;
-    background-color: aquamarine;
+    width: 100%;
+    grid-area: 1 / 8 / 1 / span 3 ;
+    background-color: #28282B;
+}
+
+.mainImage img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
 }
